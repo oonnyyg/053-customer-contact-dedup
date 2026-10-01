@@ -1,0 +1,9 @@
+{"op":"import","payload":{"records":[{"source":"a","id":"1","name":" Alice  Smith ","company":"Acme","email":" A@X.com ","phone":"(111)"},{"source":"b","id":"7","name":"alice smith","company":"acme","email":"a@x.com","phone":"111"}]}}
+{"op":"import","payload":{"records":[{"source":"a","id":"1","name":" Alice  Smith ","company":"Acme","email":" A@X.com ","phone":"(111)"}]}}
+{"op":"candidates","payload":{"page":1,"page_size":10}}
+{"op":"record","payload":{"source":"a","id":"1"}}
+{"op":"merge","payload":{"records":[{"source":"b","id":"7"},{"source":"a","id":"1"}],"choices":{"company":{"source":"a","id":"1"},"email":{"source":"b","id":"7"},"phone":{"source":"a","id":"1"}}}}
+{"op":"merge","payload":{"records":[{"source":"a","id":"1"}]}}
+{"op":"bogus"}
+not json
+{"op":"export"}
